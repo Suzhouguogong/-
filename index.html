@@ -54,6 +54,8 @@
 
   .header { max-width: 1200px; margin: 0 auto; padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; background: var(--white); z-index: 100; border-bottom: 1px solid transparent; }
   .header.scrolled { border-bottom-color: var(--border); box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .logo { display: flex; align-items: center; gap: 14px; }
+  .logo img { height: 48px; width: auto; object-fit: contain; }
   .logo h1 { font-size: 22px; color: var(--dark); font-weight: 700; }
   .logo p { font-size: 13px; color: var(--primary); margin-top: 2px; }
   .nav a { color: var(--dark); text-decoration: none; margin-left: 28px; font-size: 14px; }
@@ -140,8 +142,11 @@
 
 <header class="header" id="header">
   <div class="logo">
-    <h1>苏州国工电子科技有限公司</h1>
-    <p>Suzhou Guogong Electronic Technology Co., Ltd.</p>
+    <img src="images/logo.png" alt="苏州国工电子科技有限公司">
+    <div>
+      <h1>苏州国工电子科技有限公司</h1>
+      <p>Suzhou Guogong Electronic Technology Co., Ltd.</p>
+    </div>
   </div>
   <nav class="nav">
     <a href="#about">关于我们</a>
