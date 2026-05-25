@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>苏州国工电子科技有限公司 | 赛元MCU华东一级代理</title>
+<meta name="description" content="苏州国工电子科技有限公司是赛元微电华东地区官方授权一级代理商，十年MCU嵌入式开发经验，提供赛元全系列芯片销售、方案设计与技术支持。">
+<meta name="keywords" content="赛元芯片代理商,赛元一级代理商,华东赛元代理商,苏州赛元代理商,赛元MCU代理,MCU方案设计,赛元微电">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "苏州国工电子科技有限公司",
+  "description": "赛元微电华东地区官方授权一级代理商，拥有十多年MCU嵌入式软硬件开发和产品销售经验，掌握核心IoT物联网应用技术，获得多项国家专利和著作权。",
+  "telephone": ["+86-15952441612", "+86-13451980686"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "薛家湾街吴中机器人产业园D栋307-309",
+    "addressLocality": "苏州市",
+    "addressRegion": "江苏省",
+    "addressCountry": "CN"
+  },
+  "url": "https://wangdali12345.github.io",
+  "makesOffer": [{
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Product",
+      "name": "赛元MCU芯片",
+      "description": "赛元微电官方授权一级代理商，提供赛元MCU全系列芯片销售与技术支持",
+      "brand": {"@type": "Brand", "name": "赛元微电"}
+    }
+  }]
+}
+</script>
+
+<style>
+  :root {
+    --primary: #1a56db;
+    --primary-light: #e8f0fe;
+    --dark: #1a1a2e;
+    --gray: #6b7280;
+    --light: #f8fafc;
+    --white: #ffffff;
+    --border: #e5e7eb;
+    --shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Microsoft YaHei", "PingFang SC", sans-serif; color: #333; line-height: 1.8; background: var(--white); }
+
+  .top-bar { background: var(--dark); color: #ccc; font-size: 13px; padding: 8px 0; text-align: center; }
+  .top-bar span { margin: 0 16px; }
+
+  .header { max-width: 1200px; margin: 0 auto; padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; background: var(--white); z-index: 100; border-bottom: 1px solid transparent; }
+  .header.scrolled { border-bottom-color: var(--border); box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .logo h1 { font-size: 22px; color: var(--dark); font-weight: 700; }
+  .logo p { font-size: 13px; color: var(--primary); margin-top: 2px; }
+  .nav a { color: var(--dark); text-decoration: none; margin-left: 28px; font-size: 14px; }
+  .nav a:hover { color: var(--primary); }
+
+  .hero { background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #1a56db 100%); color: #fff; padding: 80px 24px; text-align: center; }
+  .hero h2 { font-size: 36px; font-weight: 700; margin-bottom: 16px; }
+  .hero p { font-size: 18px; opacity: 0.9; max-width: 700px; margin: 0 auto; }
+  .hero .badge { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); padding: 6px 20px; border-radius: 20px; font-size: 14px; margin-top: 24px; }
+
+  section { padding: 72px 24px; }
+  .container { max-width: 1100px; margin: 0 auto; }
+  .section-title { font-size: 28px; font-weight: 700; color: var(--dark); margin-bottom: 12px; }
+  .section-subtitle { font-size: 15px; color: var(--gray); margin-bottom: 40px; }
+
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+  .card { background: var(--light); border: 1px solid var(--border); border-radius: 8px; padding: 32px; }
+  .card .icon { width: 48px; height: 48px; background: var(--primary-light); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 16px; }
+  .card h3 { font-size: 18px; color: var(--dark); margin-bottom: 10px; }
+  .card p { font-size: 14px; color: var(--gray); line-height: 1.8; }
+
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+  .about-text h3 { font-size: 18px; color: var(--dark); margin-bottom: 12px; margin-top: 24px; }
+  .about-text h3:first-child { margin-top: 0; }
+  .about-text p { font-size: 14px; color: var(--gray); line-height: 1.9; }
+  .about-image { text-align: center; }
+
+  .industry-list { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-top: 32px; }
+  .industry-item { background: var(--light); border: 1px solid var(--border); border-radius: 8px; padding: 24px 16px; text-align: center; }
+  .industry-item .num { font-size: 32px; font-weight: 700; color: var(--primary); }
+  .industry-item .label { font-size: 13px; color: var(--gray); margin-top: 4px; }
+
+  /* Solutions section */
+  .solution-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 32px; }
+  .solution-card { background: var(--white); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); transition: transform 0.2s, box-shadow 0.2s; }
+  .solution-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+  .solution-card .solution-img { width: 100%; height: 220px; object-fit: cover; display: block; border-bottom: 1px solid var(--border); cursor: pointer; }
+  .solution-card .solution-body { padding: 24px; }
+  .solution-card .solution-body h3 { font-size: 20px; color: var(--dark); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .solution-card .solution-body h3 .tag { font-size: 11px; background: var(--primary-light); color: var(--primary); padding: 2px 10px; border-radius: 12px; font-weight: 400; }
+  .solution-card .solution-body .scenes { font-size: 13px; color: var(--gray); margin-bottom: 12px; }
+  .solution-card .solution-body .scenes strong { color: var(--dark); }
+  .solution-card .solution-body .features { font-size: 13px; color: var(--gray); line-height: 1.9; }
+  .solution-card .solution-body .features li { margin-bottom: 4px; padding-left: 16px; position: relative; }
+  .solution-card .solution-body .features li::before { content: "•"; position: absolute; left: 0; color: var(--primary); }
+
+  /* Lightbox */
+  .lightbox { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 9999; align-items: center; justify-content: center; cursor: pointer; }
+  .lightbox.active { display: flex; }
+  .lightbox img { max-width: 90vw; max-height: 90vh; object-fit: contain; }
+  .lightbox .close { position: absolute; top: 24px; right: 32px; color: #fff; font-size: 36px; cursor: pointer; }
+
+  .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; }
+  .contact-card { background: var(--light); border: 1px solid var(--border); border-radius: 8px; padding: 28px; }
+  .contact-card h3 { font-size: 17px; color: var(--dark); margin-bottom: 16px; }
+  .contact-card p { font-size: 14px; color: var(--gray); margin-bottom: 8px; }
+
+  .map-placeholder { background: var(--primary-light); border-radius: 8px; padding: 24px; font-size: 14px; color: var(--primary); line-height: 2; }
+
+  .spirit { background: var(--dark); color: #fff; text-align: center; padding: 56px 24px; }
+  .spirit blockquote { font-size: 17px; max-width: 700px; margin: 0 auto; opacity: 0.9; line-height: 2; }
+
+  .footer { background: #111; color: #888; text-align: center; padding: 24px; font-size: 13px; }
+
+  @media (max-width: 768px) {
+    .about-grid, .contact-grid { grid-template-columns: 1fr; }
+    .industry-list { grid-template-columns: repeat(2, 1fr); }
+    .solution-grid { grid-template-columns: 1fr; }
+    .nav { display: none; }
+    .hero h2 { font-size: 26px; }
+    section { padding: 48px 16px; }
+    .top-bar span { display: block; margin: 4px 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <span>赛元微电华东地区官方授权一级代理商</span>
+  <span>苏州市吴中区薛家湾街吴中机器人产业园D栋307-309</span>
+  <span>业务: 15952441612</span>
+  <span>技术: 13451980686</span>
+</div>
+
+<header class="header" id="header">
+  <div class="logo">
+    <h1>苏州国工电子科技有限公司</h1>
+    <p>Suzhou Guogong Electronic Technology Co., Ltd.</p>
+  </div>
+  <nav class="nav">
+    <a href="#about">关于我们</a>
+    <a href="#business">主营业务</a>
+    <a href="#advantage">核心优势</a>
+    <a href="#solutions">方案介绍</a>
+    <a href="#contact">联系方式</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>专注MCU嵌入式，服务华东十五年</h2>
+  <p>从芯片选型到量产交付，提供赛元全系列MCU芯片销售、方案设计与技术支持的一站式服务</p>
+  <div class="badge">赛元微电官方授权 · 一级代理商</div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="section-title">关于我们</h2>
+        <p class="section-subtitle">成立于苏州，扎根华东，服务全国</p>
+
+        <h3>公司简介</h3>
+        <p>苏州国工电子科技有限公司是一家专注于MCU嵌入式软硬件开发和产品销售的高科技企业。公司拥有十多年行业经验，是赛元微电在华东地区的官方授权一级代理商，直连原厂，为客户提供赛元全系列MCU芯片、方案设计和技术支持服务。</p>
+
+        <h3>技术积累</h3>
+        <p>公司掌握核心的IoT物联网应用技术，获得多项国家专利和著作权。成功交付的产品和方案覆盖智能家居、工业控制、消费电子、通讯设备及PC周边等多个行业。团队具备从原理图评审、PCB布局指导到固件调试的全链路技术能力。</p>
+      </div>
+      <div class="about-image">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
+          <div>
+            <img src="images/business-license.jpg" alt="苏州国工电子科技有限公司营业执照" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); cursor: pointer;" loading="lazy" onclick="openLightbox(this.src)">
+            <p style="margin-top: 8px; font-size: 12px; color: var(--gray);">营业执照</p>
+          </div>
+          <div>
+            <img src="images/agent-cert.jpg" alt="赛元微电官方授权代理商证书" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); cursor: pointer;" loading="lazy" onclick="openLightbox(this.src)">
+            <p style="margin-top: 8px; font-size: 12px; color: var(--gray);">赛元官方授权代理商</p>
+          </div>
+        </div>
+        <p style="font-size: 13px; color: var(--gray);">统一社会信用代码：91320506MA1XQ1TR6D</p>
+        <div style="display: flex; gap: 20px; margin-top: 16px; justify-content: center; flex-wrap: wrap;">
+          <div style="text-align: center;"><p style="font-size: 32px; font-weight: 700; color: var(--primary);">10+</p><p style="font-size: 12px; color: var(--gray);">年嵌入式开发经验</p></div>
+          <div style="text-align: center;"><p style="font-size: 32px; font-weight: 700; color: var(--primary);">5</p><p style="font-size: 12px; color: var(--gray);">大行业方案覆盖</p></div>
+          <div style="text-align: center;"><p style="font-size: 32px; font-weight: 700; color: var(--primary);">多项</p><p style="font-size: 12px; color: var(--gray);">国家专利与著作权</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="business" style="background: var(--light);">
+  <div class="container">
+    <h2 class="section-title">主营业务</h2>
+    <p class="section-subtitle">围绕赛元MCU生态，提供芯片供应、方案设计与技术支持的完整服务链</p>
+
+    <div class="cards">
+      <div class="card">
+        <div class="icon">芯</div>
+        <h3>赛元MCU芯片销售</h3>
+        <p>赛元微电全系列MCU一级代理，原厂直供，价格优势明显。覆盖标准型、触摸型、电机驱动型等全产品线，支持样片申请、小批试产、批量供货全阶段需求。</p>
+      </div>
+      <div class="card">
+        <div class="icon">案</div>
+        <h3>嵌入式方案设计</h3>
+        <p>十年以上经验的FAE团队提供选型咨询、原理图评审、PCB布局建议、固件开发支持。从需求分析到量产测试全流程介入，降低客户开发风险。</p>
+      </div>
+      <div class="card">
+        <div class="icon">技</div>
+        <h3>技术支持和售后</h3>
+        <p>完善的售后体系，常规问题四小时响应，紧急问题两小时工程师介入。苏州本地客户当天上门，华东主要城市半天内到达。量产阶段提供驻场分析和良率保障。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="advantage">
+  <div class="container">
+    <h2 class="section-title">核心优势</h2>
+    <p class="section-subtitle">一级代理资质与自主研发能力兼备，行业内少见的技术型代理商</p>
+
+    <div class="industry-list">
+      <div class="industry-item">
+        <div class="num">10+</div>
+        <div class="label">年嵌入式开发经验</div>
+      </div>
+      <div class="industry-item">
+        <div class="num">5</div>
+        <div class="label">大行业方案覆盖</div>
+      </div>
+      <div class="industry-item">
+        <div class="num">多项</div>
+        <div class="label">国家专利与著作权</div>
+      </div>
+      <div class="industry-item">
+        <div class="num">4h</div>
+        <div class="label">常规问题响应时效</div>
+      </div>
+      <div class="industry-item">
+        <div class="num">当天</div>
+        <div class="label">苏州本地工程师上门</div>
+      </div>
+    </div>
+
+    <div class="cards" style="margin-top: 40px;">
+      <div class="card">
+        <h3>原厂直签，价格有保障</h3>
+        <p>一级代理直接对接原厂，没有中间商加价环节。批量采购价格优势明显，紧缺时期原厂优先调配货源。</p>
+      </div>
+      <div class="card">
+        <h3>技术型代理，不只是卖货</h3>
+        <p>拥有自主研发专利和著作权的代理商在行业内占比不到百分之五。我们的FAE团队具备IoT物联网核心技术能力，能在寄存器级别定位问题。</p>
+      </div>
+      <div class="card">
+        <h3>华东本地化服务</h3>
+        <p>总部位于苏州吴中区，服务范围覆盖江苏、浙江、上海、安徽。本地化团队确保快速响应，选型阶段可上门当面沟通，量产阶段可驻场保障。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="solutions" style="background: var(--light);">
+  <div class="container">
+    <h2 class="section-title">方案介绍</h2>
+    <p class="section-subtitle">基于赛元MCU平台，覆盖家电、工具、工业控制等多领域的成熟方案，可快速导入量产</p>
+
+    <div class="solution-grid">
+
+      <!-- 摇头风扇 -->
+      <div class="solution-card">
+        <img class="solution-img" src="images/page-02.png" alt="摇头风扇方案" onclick="openLightbox(this.src)">
+        <div class="solution-body">
+          <h3>摇头风扇 <span class="tag">赛元MCU方案</span></h3>
+          <p class="scenes"><strong>适用场景：</strong>智能落地扇 · 循环扇 · 低压排气扇</p>
+          <ul class="features">
+            <li>风速调节（正常风、自然风、睡眠风、Auto）</li>
+            <li>智能化：红外遥控、OTA升级、定时开关机</li>
+            <li>堵转不失步，快速恢复</li>
+            <li>多种保护功能：过欠压保护、软硬件过流保护、失速保护、堵转保护、缺相保护、NTC传感器开路/短路保护</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 冰沙机 -->
+      <div class="solution-card">
+        <img class="solution-img" src="images/page-03.png" alt="冰沙机方案" onclick="openLightbox(this.src)">
+        <div class="solution-body">
+          <h3>冰沙机 <span class="tag">赛元MCU方案</span></h3>
+          <p class="scenes"><strong>适用场景：</strong>多功能制冰沙冰机 · 便携制冰机 · 迷你冰饮一体机 · 车载冰箱</p>
+          <ul class="features">
+            <li>多种模式饮品制作：支持奶昔、果汁、咖啡沙冰、酒类沙冰制作</li>
+            <li>压缩机和直流无刷电机协同工作，精准控温并维持口感</li>
+            <li>具有清洁模式和调温模式</li>
+            <li>安全与保护机制：配备安全锁、压缩机3分钟延时保护、直流电机过流检测（超5A时指示灯提示）</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 宠物空气净化器 -->
+      <div class="solution-card">
+        <img class="solution-img" src="images/page-04.png" alt="宠物空气净化器方案" onclick="openLightbox(this.src)">
+        <div class="solution-body">
+          <h3>宠物空气净化器 <span class="tag">赛元MCU方案</span></h3>
+          <p class="scenes"><strong>适用场景：</strong>宠物专用空气净化 · 空气净化器 · 多功能宠物护理净化设备</p>
+          <ul class="features">
+            <li>空气监测与显示：实时检测PM2.5和TVOC浓度</li>
+            <li>风速调节：轻音档+3档调速，APP支持9档细分调节</li>
+            <li>支持WiFi配网、APP远程控制及OTA在线升级</li>
+            <li>安全保护机制：童锁功能（长按3S锁定本机按键）、防倾倒自动关机、无滤网时UV功能锁定、电机/传感器故障告警</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 胶囊咖啡机 -->
+      <div class="solution-card">
+        <img class="solution-img" src="images/page-05.png" alt="胶囊咖啡机方案" onclick="openLightbox(this.src)">
+        <div class="solution-body">
+          <h3>胶囊咖啡机 <span class="tag">赛元MCU方案</span></h3>
+          <p class="scenes"><strong>适用场景：</strong>咖啡机 · 胶囊式多功能饮品机 · 智能胶囊咖啡机</p>
+          <ul class="features">
+            <li>具备自定义杯量功能、咖啡浓度；有童锁、低功耗功能</li>
+            <li>支持APP远程启动制作、预约制作、OTA在线升级</li>
+            <li>数据反馈：显示累计制作杯数、耗材状态、设备故障代码</li>
+            <li>设备实时监测"水位、胶囊状态、加热管温度"，异常时立即停止制作，同步推送APP告警</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 空气炸锅 -->
+      <div class="solution-card">
+        <img class="solution-img" src="images/page-06.png" alt="空气炸锅方案" onclick="openLightbox(this.src)">
+        <div class="solution-body">
+          <h3>空气炸锅 <span class="tag">赛元MCU方案</span></h3>
+          <p class="scenes"><strong>适用场景：</strong>家用空气炸锅 · 桌面式烘烤炉 · 空气炸烤一体机</p>
+          <ul class="features">
+            <li>定时功能：工作中按"启动/暂停"键进入暂停状态，时间、温度保持显示，倒计时停止，10分钟内再次按下恢复运行</li>
+            <li>工作中取出炸篮，屏幕显示"OPEN"，电热管和风机立即停止；重新放入后整机恢复之前状态</li>
+            <li>开盖即停：取出炸篮时立即切断电热管和风机电源，避免高温烫伤</li>
+            <li>自动待机：暂停状态下10分钟无操作，整机停止工作（仅保留电源灯），降低能耗</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 吸尘器 -->
+      <div class="solution-card">
+        <img class="solution-img" src="images/page-07.png" alt="吸尘器方案" onclick="openLightbox(this.src)">
+        <div class="solution-body">
+          <h3>吸尘器 <span class="tag">赛元MCU方案</span></h3>
+          <p class="scenes"><strong>适用场景：</strong>家用除螨仪 · 手持吸尘器 · 无线车载吸尘器</p>
+          <ul class="features">
+            <li>22.2V锂电池（6节18650-1800mAh 5C电芯，39.96Wh），额定功率180W，满电真空度≥10Kpa</li>
+            <li>555有刷电机（吸力≥11Kpa，22.2V时电流8-9A），支持TYPE-C充电接口</li>
+            <li>支持5V 1A/2A常规充电及9V 2A快充（3-4小时充满），充电时红灯常亮（非快充则呼吸闪烁），充满变蓝灯</li>
+            <li>主电机启动异常（线圈烧毁、卡死等）时，蓝灯闪烁3次后自动关机</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 空调内机 -->
+      <div class="solution-card">
+        <img class="solution-img" src="images/page-08.png" alt="空调内机方案" onclick="openLightbox(this.src)">
+        <div class="solution-body">
+          <h3>空调内机 <span class="tag">赛元MCU方案</span></h3>
+          <p class="scenes"><strong>适用场景：</strong>家用空调 · 车载空调</p>
+          <ul class="features">
+            <li>具有AUTO、FAN、HIGH、LOW四种运行模式</li>
+            <li>集成UV杀菌（抑制风道细菌滋生）、负离子净化（改善室内空气清新度）、定时（0-24小时）、夜灯（柔和柔光设计）功能</li>
+            <li>内置压缩机启停保护逻辑：压缩机停机到再次启动需间隔至少3分钟（符合国家强制标准），避免频繁启停损耗，延长核心部件寿命</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 吸尘器-锂电池包 -->
+      <div class="solution-card">
+        <img class="solution-img" src="images/page-09.png" alt="吸尘器锂电池包方案" onclick="openLightbox(this.src)">
+        <div class="solution-body">
+          <h3>吸尘器-锂电池包方案 <span class="tag">BMS方案</span></h3>
+          <p class="scenes"><strong>适用场景：</strong>BMS电池包 · 吸尘器 · 除螨仪</p>
+          <ul class="features">
+            <li>高档位对应强动力场景（如清洁顽固污渍），低档位适配轻负载清洁（如桌面浮尘），操作直观且适配不同清洁需求</li>
+            <li>设备连续闲置设定时长后自动进入休眠模式，大幅降低待机功耗（相较常规待机耗电减少约80%），有效延长电池闲置存储时长</li>
+            <li>集成过充（防止电芯过压鼓包）、过放（避免电芯欠压衰减）、过流（抑制大电流过载）、短路（快速切断回路防风险）四大核心保护，全方位覆盖电芯充放电全周期安全</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 温控器 -->
+      <div class="solution-card">
+        <img class="solution-img" src="images/page-10.png" alt="温控器方案" onclick="openLightbox(this.src)">
+        <div class="solution-body">
+          <h3>温控器 <span class="tag">赛元MCU方案</span></h3>
+          <p class="scenes"><strong>适用场景：</strong>空调温控器 · 地暖温控器</p>
+          <ul class="features">
+            <li>支持舒适采暖、节能保温、低温防冻等多种运行模式，同时支持5-35℃宽范围温度设定，适配家庭地暖、管道防冻等不同温控需求</li>
+            <li>具备完整运行参数记忆功能，断电后留存最近设定温度、运行模式、防冻阈值等配置；重新通电自动恢复至断电前工作状态，无需重复操作</li>
+            <li>内置低温防冻逻辑——当检测到环境温度低于3℃时，自动启动加热设备</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="background: var(--light);">
+  <div class="container">
+    <h2 class="section-title">联系我们</h2>
+    <p class="section-subtitle">欢迎实地考察，当面了解我们的技术团队和测试环境</p>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>公司地址</h3>
+        <p>江苏省苏州市吴中区薛家湾街</p>
+        <p>吴中机器人产业园D栋307-309室</p>
+        <p style="margin-top: 16px; color: #333;">服务区域：华东地区（江苏、浙江、上海、安徽）</p>
+      </div>
+      <div class="contact-card">
+        <h3>联系电话</h3>
+        <p style="font-size: 15px; color: var(--dark);">业务咨询：15952441612</p>
+        <p style="font-size: 15px; color: var(--dark);">技术支持：13451980686</p>
+        <p style="margin-top: 12px; font-size: 13px; color: var(--gray);">工作日上午9:00-下午6:00</p>
+      </div>
+      <div class="contact-card">
+        <h3>交通指引</h3>
+        <p>苏州本地客户：当天工程师上门</p>
+        <p>无锡：1小时车程</p>
+        <p>上海：2小时车程</p>
+        <p>杭州、南京：2.5-3小时车程</p>
+      </div>
+    </div>
+
+    <div class="map-placeholder" style="margin-top: 24px;">
+      <p style="font-weight: 600; font-size: 15px; color: var(--dark);">代理商资质验证方式</p>
+      <p>1. 访问赛元微电官网合作伙伴页面，查询华东地区授权代理商名单</p>
+      <p>2. 拨打赛元原厂客服电话，核实苏州国工电子科技有限公司代理商身份</p>
+      <p>3. 预约实地考察，现场查看赛元授权证书原件及FAE团队规模</p>
+    </div>
+  </div>
+</section>
+
+<section class="spirit">
+  <blockquote>
+    "严谨务实、积极创新、团结高效、敬业奉献"<br><br>
+    用智慧把握未来，用科技铸造辉煌，用产品服务全球<br>
+    实现与客户共同发展，争做业内领头羊<br>
+    为社会多做贡献，做一家令人尊敬的企业
+  </blockquote>
+</section>
+
+<footer class="footer">
+  <p>苏州国工电子科技有限公司 &copy; 2025 | 赛元微电华东地区官方授权一级代理商</p>
+  <p style="margin-top: 4px;">苏州市吴中区薛家湾街吴中机器人产业园D栋307-309</p>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="close">&times;</span>
+  <img src="" alt="方案详情" id="lightbox-img">
+</div>
+
+<script>
+function openLightbox(src) {
+  document.getElementById('lightbox-img').src = src;
+  document.getElementById('lightbox').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+  document.body.style.overflow = '';
+}
+// Sticky header shadow
+window.addEventListener('scroll', function() {
+  document.getElementById('header').classList.toggle('scrolled', window.scrollY > 10);
+});
+// Close lightbox with Escape key
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeLightbox();
+});
+</script>
+
+</body>
+</html>
